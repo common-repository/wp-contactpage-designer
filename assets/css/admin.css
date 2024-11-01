@@ -1,0 +1,225 @@
+#TB_window{z-index:10001!important;}
+.CPD{background-color:inherit;line-height:16px;font-family:Arial, Helvetica, sans-serif;font-size:12px;}
+.CPD .Main{position:relative;background-color:inherit;min-height:750px;overflow:auto;z-index:1;}
+.CPD #Fullscreen{
+	position:absolute;top:0;right:0;cursor:pointer;z-index:1000;border:1px solid #CCC;border-radius:4px;width:95px;padding:10px;
+	background:#FFF;
+    background-image: linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -o-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -moz-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -webkit-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -ms-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, #EEEEEE),
+        color-stop(1, #FFFFFF)
+        );
+}
+.CPD #Fullscreen span{background-image:url(img/full_screen.png);background-repeat:no-repeat;height:24px;line-height:24px;float:left;text-indent:30px;font-weight:700;}
+.CPD .Workflow{position:absolute;left:250px;top:10px;overflow:hidden;z-index:999;}
+.CPD .Workflow h1{color:#666;font-size:12px;font-weight:700;cursor:pointer;padding:0 0 5px;}
+.CPD .Workflow_Wrapper{border:1px dashed #CCC;background:#FFF;height:400px;width:600px;}
+.CPD #Workflow_resize_handle{position:absolute;bottom:0;right:0;width:12px;height:12px;background-repeat:no-repeat;}
+.CPD #Workflow_resize_coords{position:absolute;top:0;left:0;z-index:1000;font-family:Arial, Helvetica, sans-serif;color:#666;font-size:12px;font-weight:700;display:none;}
+.CPD .Toolbar{background:#FFF;width:190px;border-radius:4px;border:1px solid #ddd;position:absolute;left:10px;top:10px;z-index:1000;}
+.CPD #MakeDefault{background-image:url(img/activate.png);width:16px;height:16px;background-repeat:no-repeat;position:absolute;top:0;right:50px;cursor:pointer;}
+.CPD #NewTemplate{background-image:url(img/new_tpl.png);width:16px;height:16px;background-repeat:no-repeat;position:absolute;top:0;right:75px;cursor:pointer;}
+.CPD #SaveTemplate{background-image:url(img/save.gif);width:16px;height:16px;background-repeat:no-repeat;position:absolute;top:0;right:25px;cursor:pointer;}
+.CPD #SaveTemplate.disabled { background-image:url(img/save_disabled.png); }
+.CPD #selectTemplate{background-image:url(img/load_tpl.png);width:16px;height:16px;background-repeat:no-repeat;position:absolute;top:0px;right:50px;cursor:pointer;}
+.CPD #editTemplate{background-image:url(img/settings.gif);width:16px;height:16px;background-repeat:no-repeat;position:absolute;top:0px;right:2px;cursor:pointer;}
+.CPD #editTemplate.disabled { background-image:url(img/settings_disabled.png); }
+.CPD h1#Toolbar_move_handle{
+	width:190px;height:40px;border-radius:4px 4px 0 0;border-bottom:1px solid #ddd;color:#666;font-size:15px;font-weight:700;text-align:center;line-height:40px;cursor:pointer;
+	background:#FFF;
+    background-image: linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -o-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -moz-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -webkit-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -ms-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, #EEEEEE),
+        color-stop(1, #FFFFFF)
+        );
+}
+.Toolbar_move_handle_scroll{height:500px;overflow-x:hidden;overflow-y:scroll;width:100%;}
+.CPD ul.ToolsList{margin-bottom:10px;}
+.CPD ul.ToolsList li{
+	width:150px;height:25px;border:1px solid #ddd;color:#666;font-size:12px;font-weight:400;text-align:left;text-indent:10px;line-height:25px;cursor:pointer;margin-top:9px;margin-left:9px;
+	background:#FFF;
+    background-image: linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -o-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -moz-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -webkit-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -ms-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, #EEEEEE),
+        color-stop(1, #FFFFFF)
+        );
+	border-radius:9px 9px 9px 9px;-webkit-border-radius:9px 9px 9px 9px;-moz-border-radius:9px;-moz-border-bottom-colors:none;-moz-border-image:none;-moz-border-left-colors:none;-moz-border-right-colors:none;-moz-border-top-colors:none;box-shadow:rgba(0,0,0,0.1) 0 1px 3px 0;border-color:#EEE #CCC #CCC #EEE;
+}
+.CPD ul.ToolsList li:hover{background:#FFF;background-color:#dfeea3;border-color:#c6d880;}
+.CPD ul.ToolsList li > span{width:25px;height:25px;background-repeat:no-repeat;background-position:0 50%;margin-left:14px;float:left;}
+.CPD ul.ToolsList #createParagraph span{background-image:url(img/paragraph.png);}
+.CPD ul.ToolsList #createLabel span{background-image:url(img/label.png);}
+.CPD ul.ToolsList #createField span{background-image:url(img/field.png);}
+.CPD ul.ToolsList #createCheckbox span{background-image:url(img/checkbox.png);}
+.CPD ul.ToolsList #createMultipleChoice span{background-image:url(img/multiple_choice.png);}
+.CPD ul.ToolsList #createMailField span{background-image:url(img/email_field.png);}
+.CPD ul.ToolsList #createTextarea span{background-image:url(img/textarea.png);}
+.CPD ul.ToolsList #createSubmit span{background-image:url(img/button.png);}
+.CPD ul.ToolsList #createMap span{background-image:url(img/map.png);}
+.CPD ul.ToolsList #createCaptcha span{background-image:url(img/captcha_ico.png);}
+.CPD ul.ToolsList #createImg span{background-image:url(img/img.png);}
+.CPD ul.ToolsList #createSelect span{background-image:url(img/dropdown_menu_icon.png);}
+.CPD ul.ToolsList #createFacebook span{background-image:url(img/facebook.png);}
+.CPD ul.ToolsList #createTwitter span{background-image:url(img/twitter.png);}
+.CPD ul.ToolsList #createAddress span{background-image:url(img/Address-icon.png);}
+.CPD ul.ToolsList #createPrice span{background-image:url(img/price.png);}
+.CPD ul.ToolsList #createQuantity span{background-image:url(img/quantity.png);}
+.CPD ul.ToolsList #createTotal span{background-image:url(img/total_plan_cost.png);}
+.CPD ul.ToolsList #createPaypal span{background-image:url(img/paypal.png);}
+.CPD ul.ToolsList #createDate span{background-image:url(img/date.png);}
+.CPD ul.ToolsList #createTime span{background-image:url(img/time.png);}
+.CPD ul.ToolsList #createDownload span{background-image:url(img/download.png);}
+.Twitter{background:url(img/twitter_like_icon.png) no-repeat;width:60px;height:20px;display:block;}
+.facebook{background:url(img/createFacebook.png) no-repeat;width:128px;height:20px;display:block;}
+.Workflow_Wrapper ul{width:100%;height:100%;position:relative;}
+.Workflow_Wrapper ul li > p,.Workflow_Wrapper ul li > label{font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;}
+.Workflow_Wrapper ul li p{color:#000;}
+.Workflow_Wrapper ul li > label{color:#666;}
+.Workflow_Wrapper ul li input[type=text],.Workflow_Wrapper ul li input[type=email]{font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;color:#000;height:25px;border:1px solid #CCC;line-height:25px;text-align:left;}
+.Workflow_Wrapper ul li textarea{font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;color:#000;height:150px;width:450px;border:1px solid #CCC;text-align:left;}
+.Workflow_Wrapper ul li input[type=submit],.Workflow_Wrapper ul li input[type=button]{font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:400;color:#000;height:25px;border:1px solid #DDD;text-align:center;border-radius:4px;cursor:pointer;}
+.Workflow_Wrapper .elementTools{position:absolute;top:-22px;left:-2px;display:none;background:#EEE;border:1px solid #CCC;width:53px;height:20px;border-radius:4px;z-index:1000;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);filter:alpha(opacity=80);-moz-opacity:0.8;-khtml-opacity:0.8;opacity:0.8;}
+.Workflow_Wrapper .elementTools .move{background-image:url(img/move.png);width:12px;height:12px;background-repeat:no-repeat;float:left;margin-left:5px;margin-right:5px;margin-top:5px;cursor:pointer;}
+.Workflow_Wrapper .elementTools .edit{background-image:url(img/edit.png);width:10px;height:10px;background-repeat:no-repeat;float:left;margin-right:5px;margin-top:5px;cursor:pointer;}
+.Workflow_Wrapper .elementTools .delete{background-image:url(img/delete.png);width:10px;height:10px;background-repeat:no-repeat;float:left;margin-right:5px;margin-top:5px;cursor:pointer;}
+.CPD .BlackBox{position:absolute;width:100%;height:100%;z-index:997;left:0;top:0;display:none;}
+.CPD .separate{width:100%;height:1px;clear:both;}
+.CPD .ElementEditor .EditParagraph{background:#FFF;display:none;border-radius:0 0 4px 4px;overflow:hidden;padding:10px;}
+.CPD .ElementEditor textarea{width:100%;height:100px;border:1px solid #CCC;color:#666;resize:none;margin-bottom:5px;}
+.CPD .TemplateProperties input[type=button],.CPD .ElementEditor input[type=button]{
+	border-radius:4px;border:1px solid #CCC;font-family:Arial,Helvetica,sans-serif;font-size:12px;height:32px;text-align:center;width:110px;cursor:pointer;float:right;margin:12px 5px 5px 127px;
+	background:#FFF;
+    background-image: linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -o-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -moz-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -webkit-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -ms-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, #EEEEEE),
+        color-stop(1, #FFFFFF)
+        );
+}
+.CPD .ElementEditor .EditSelect .importButton,.CPD .ElementEditor .EditMultipleChoice .importButton{text-align:right;margin-left:135px;}
+.CPD .ElementEditor .EditSelect .selectChoiseDropDown,.CPD .ElementEditor .EditMultipleChoice .selectChoiseDropDown{list-style:none;width:100%;}
+.CPD .ElementEditor .EditSelect .selectChoiseDropDown li,.CPD .ElementEditor .EditMultipleChoice .selectChoiseDropDown li{display:inline-block;float:left;}
+.CPD .ElementEditor .EditSelect .selectChoiseDropDown li a,.CPD .ElementEditor .EditMultipleChoice .selectChoiseDropDown li a{display:block;padding:5px;}
+.SelectError{width:100%;text-align:center;color:red;}
+.optionSelectSave span{display:block;text-align:center;width:100%;padding:5px 0;}
+.colorpicker{z-index:1001;}
+.CPD .TemplateProperties{position:absolute;z-index:1000;left:0;top:0;background:#FFF;width:400px;overflow:hidden;border:6px solid #999;border-radius:6px;display:none;}
+.CPD .TemplateProperties label{font-family:Arial, Helvetica, sans-serif;font-size:12px;text-align:left;float:left;margin-bottom:5px;color:#666;line-height:20px;margin-top:10px;margin-left:10px;}
+.CPD .TemplateProperties input[type=text]{height:21px;font-family:Arial, Helvetica, sans-serif;font-size:12px;text-align:left;float:left;margin-bottom:5px;width:280px;border:1px solid #CCC;color:#666;margin-top:10px;margin-left:10px;}
+.CPD .SelectTemplate{position:absolute;z-index:1000;left:0;top:0;background:#FFF;overflow:hidden;border:6px solid #999;border-radius:6px;display:none;}
+.CPD .SelectTemplate i{color:#ccc;width:80%;display:block;margin:0 auto;}
+.CPD .SelectTemplate ul{padding:10px 10px 0;}
+.CPD .SelectTemplate ul li{background:0 repeat scroll 0 0 #FFF;border:1px solid #DDD;border-radius:2px 2px 2px 2px;color:#666;cursor:pointer;font-size:12px;font-weight:400;height:40px;line-height:40px;text-align:center;width:280px;margin-bottom:10px;}
+#AddressGenerate{width:469px;height:182px;}
+#AddressGenerate p{clear:both;width:90%;margin:0;}
+#AddressGenerate p input,#AddressGenerate p select{border:1px solid #ccc;color:#000;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:400;height:25px;line-height:25px;width:100%;}
+#AddressGenerate p.float_left{float:left;clear:none;}
+#AddressGenerate p.w_50{width:43%;margin:0 22px 0 0;}
+.CPD .ElementEditor{position:absolute;z-index:1000;left:0;top:0;border:6px solid #999;border-radius:6px;display:none;}
+.CPD .ElementEditor h4{
+	width:100%;height:35px;line-height:35px;display:none;cursor:pointer;border-bottom:1px solid #333;background-color:#fff;font-size:16px;font-weight:700;text-indent:10px;border-radius:4px 4px 0 0;margin:0;
+	background:#FFF;
+    background-image: linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -o-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -moz-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -webkit-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -ms-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, #EEEEEE),
+        color-stop(1, #FFFFFF)
+        );
+}
+.CPD .ElementEditor > div{background:#FFF;display:none;border-radius:0 0 4px 4px;overflow:hidden;padding:10px;}
+.CPD .ElementEditor label{font-family:Arial, Helvetica, sans-serif;font-size:12px;text-align:left;float:left;margin-bottom:5px;color:#666;min-width:145px;line-height:19px;}
+.CPD .ElementEditor input.name{width:200px;}
+.CPD .ElementEditor input[type=text]{height:19px;font-family:Arial, Helvetica, sans-serif;font-size:12px;text-align:left;float:left;margin-bottom:5px;width:200px;border:1px solid #CCC;color:#666;}
+.CPD .ElementEditor input[name=color],.CPD .ElementEditor input[name=bgcolor],.CPD .ElementEditor input[name=brcolor]{width:70px!important;}
+.CPD .ElementEditor input[name=font-size]{width:50px;}
+.CPD .ElementEditor .colorPalette{margin-left:5px;background-image:url(img/colorpicker.png);background-repeat:no-repeat;height:21px;width:24px;float:left;cursor:pointer;}
+.CPD .ElementEditor select{line-height:19px;height:19px;font-family:Arial, Helvetica, sans-serif;font-size:12px;text-align:left;float:left;margin-bottom:5px;width:200px;border:1px solid #CCC;color:#666;}
+.CPD .checkbox > input{vertical-align:middle;margin-right:4px;}
+.CPD .multiple_choice span{display:block;}
+.CPD .multiple_choice input{margin-right:2px;vertical-align:text-top;}
+.CPD .Workflow_Wrapper select{width:150px;border:1px solid #ccc;}
+.CPD textarea,.CPD input,.CPD select{margin:0;padding:0;}
+div.CPD ul > li{border:1px dotted transparent;padding:2px;}
+.CPD .Workflow_Wrapper ul > li:hover{border:1px dashed #3b699f;}
+.CPD li.required{padding-right:10px;background:url(img/required_icon.gif) no-repeat right 5px;}
+.CPD .price .currency,.CPD .total .currency{margin-right:2px;}
+.CPD .total .define-list{display:none;}
+.CPD .total{padding:0 2px;}
+.CPD .date img{margin:0 0 0 2px;}
+.CPD .time span{display:inline-block;width:17px;height:18px;background:url(img/clock.png) no-repeat;margin-left:2px;}
+.CPD input[type=button],.CPD input[type=submit]{cursor:pointer;}
+.CPD .ElementEditor input[name=Source]{width:170px!important;}
+.CPD .ElementEditor .EditImg a{margin-left:2px;}
+#AddressGenerate.required p{background:url(img/required_icon.gif) no-repeat right 20px;padding-right:10px;}
+.CPD #Fullscreen:hover,.CPD .TemplateProperties input[type=button]:hover,.CPD .ElementEditor input[type=button]:hover,.CPD .SelectTemplate ul li:hover{
+	background:#FFF;
+    background-image: linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -o-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -moz-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -webkit-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -ms-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, #EEEEEE),
+        color-stop(1, #FFFFFF)
+        );
+}
+.CPD .ElementEditor .EditSelect .selectChoiseDropDown span,.CPD .ElementEditor .EditMultipleChoice .selectChoiseDropDown span,.CPDBold{font-weight:700;}
+.CPD .TemplateProperties h4,.CPD .SelectTemplate h4{
+	width:100%;height:35px;line-height:35px;cursor:pointer;border-bottom:1px solid #333;font-size:16px;font-weight:700;text-indent:10px;border-radius:4px 4px 0 0;margin:0;
+	background:#FFF;
+    background-image: linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -o-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -moz-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -webkit-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -ms-linear-gradient(bottom, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, #EEEEEE),
+        color-stop(1, #FFFFFF)
+        );
+}
+span.close-button{float:right;font-size:0;background-image:url(img/close_button.png);background-repeat:no-repeat;width:16px;height:16px;margin-right:9px;margin-top:9px;}
+.CPD .ElementEditor input[name=width],.CPD .ElementEditor input[name=height],.CPD .ElementEditor input[name=left],.CPD .ElementEditor input[name=top]{width:50px!important;}
+.CPD div.date input,.CPD input.quantity,.CPD .time input{width:100px;}
+.CPD .EditTemplate input[type=text], .CPD .EditTemplate textarea { width: 280px; }
+.CPD .width_50 { width: 50px !important; }
+.CPD input[type="radio"] { vertical-align: middle; }
+#cp_design_toolbar { display: none; }

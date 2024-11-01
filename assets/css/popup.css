@@ -1,0 +1,29 @@
+.fancybox-inner ul{
+	margin: 0px;
+}
+.fancybox-inner ul li{
+	overflow:  visible;
+}
+.fancybox-skin{
+	padding:0px !important;
+	padding-bottom:3px !important;
+	
+}
+.fancybox-opened {
+	z-index: 10000;
+	
+}
+.fancybox-inner{
+	overflow: visible !important;
+}
+#cpd_contact_form_container{
+	display:none;
+}
+
+.fancybox-close{
+	background-image: url('img/close_button.png');
+	width:16px;
+	height:16px;
+	top:3px;
+	right:3px;
+}
